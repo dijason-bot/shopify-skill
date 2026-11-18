@@ -1,6 +1,6 @@
 # Shopify 项目知识库
 
-从 [LLM Wiki](wiki/index.md) 开始，查看可用技能、结论和历次执行记录。
+从 [LLM Wiki](.wiki/_index.md) 开始，查看可用技能、结论和历次执行记录。
 
 首轮官方资料核对日期为 **2026-11-18**。功能地图覆盖商家后台、主题与自建店面、应用和平台 API。项目手册结合美国定制窗饰业务，附有诊断、测试和上线步骤。每个专题提供官方入口，可按问题追查具体页面、字段和变更。
 
@@ -17,3 +17,5 @@
 从实际问题进入相应专题。例：“香港主体的 USD 订单为什么出现转换费？”先读窗饰手册的支付诊断，“如何增加按尺寸计价？”先读商品建模与开发选型。资料的覆盖粒度是功能域和实施入口。具体后台开关、地区资格及 API 字段以办理当时的官方资料与店铺验证为准。
 
 [Shopify 帮助中心](https://help.shopify.com/en) · [Shopify 开发文档](https://shopify.dev/docs) · [官方 AI Toolkit](https://shopify.dev/docs/api/ai-toolkit) · [Fall ’26 Editions](https://www.shopify.com/editions/fall2026)
+
+本项目已接入 [LLM Wiki 官方可移植协议](vendor/llm-wiki/AGENTS.md)。上游来源为 [nvk/llm-wiki](https://github.com/nvk/llm-wiki)，下载内容的 Git blob 为 `2b175304d72aa3e8654ef7f9ed7b7d0b6fcaf94e`。

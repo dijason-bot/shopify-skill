@@ -5,7 +5,7 @@ description: 开发或改版 Shopify 首页、集合页、商品详情页或活�
 
 # Shopify 页面开发与体验验证
 
-先查 [LLM Wiki](../../wiki/index.md) 和已有相关记录。将下面的执行结果存入 [Wiki 执行目录](../../wiki/runs/index.md)，新结论回写 [页面验证结论](../../wiki/topics/page-validation.md)。
+先查 [LLM Wiki](../../.wiki/_index.md) 和已有相关记录。将下面的执行结果存入 [Wiki 执行目录](../../.wiki/output/_index.md)，新结论回写 [页面验证结论](../../wiki/topics/page-validation.md)。
 
 收到具体页面任务时，推进到用户授权范围内的最远阶段。每次交付保留同一份记录，从需求跟到上线效果。店铺权限、收费、正式发布仅在实际需要时一次说明。
 
