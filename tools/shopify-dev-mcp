@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+entry="$root/.shopify-tools/node_modules/@shopify/dev-mcp/dist/index.js"
+if [ ! -f "$entry" ]; then
+  exec npx -y @shopify/dev-mcp@latest "$@"
+fi
+if [ -x "$HOME/.nvm/versions/node/v22.22.3/bin/node" ]; then
+  PATH="$HOME/.nvm/versions/node/v22.22.3/bin:$PATH"
+fi
+export PATH
+exec node "$entry" "$@"

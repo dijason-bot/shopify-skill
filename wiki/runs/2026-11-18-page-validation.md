@@ -1,0 +1,16 @@
+# 2026-11-18 · 页面开发技能、Dev MCP 验证与 Wiki 建立
+
+**目标**　建立可复用的 Shopify 页面交付流程，打通开发验证工具，并建立后续执行与存储约定。此次没有指定实际页面或草稿主题。
+
+| 阶段 | 已执行操作 | 结果及证据 |
+| --- | --- | --- |
+| 官方核查 | 查 Shopify 的 Toolkit、Theme CLI、SimGym、测试订单和性能文档 | 适用条件与验证流程写入[页面技能](../../skills/shopify-page-delivery/SKILL.md) |
+| 工具接入 | 执行官方 Codex 插件安装命令，检查可用网络及本地 npm 缓存 | 插件缓存目录写入被拒，终端无法解析 GitHub 域名。使用本机缓存中按 npm 锁文件完整性验证的官方 Dev MCP 1.13.3，在项目内准备独立运行环境 |
+| 协议与能力 | 用项目启动器完成 MCP initialize、tools/list、learn_shopify_api(liquid) | 服务返回 shopify-dev-mcp 1.13.3；列出 validate_theme 并返回 Liquid 开发指引 |
+| 示例负例 | 临时主题的 sections/preview.liquid 写入未闭合的 `{% if %}`；调用 validate_theme，artifactId 为 preview，revision 为 1 | 返回 INVALID，检测到未闭合的 LiquidBranch |
+| 修复复测 | 替换为输出已转义标题的有效 section，增加匹配的 schema；同会话、同文件、同 artifactId，revision 改为 2 | 返回 VALID，文件通过 Shopify Theme Check。示例验证了工具链；真实页面渲染和店铺行为待实测 |
+| Wiki | 建立技能索引、结论页、运行记录、模板，接入项目指令与项目技能 | [Wiki 首页](../index.md) · [页面验证结论](../topics/page-validation.md) |
+
+**下次执行条件**　取得具体页面及其主题代码或草稿入口后，在预览中验证买家流程。运行 SimGym 时核对店铺资格、应用权限和额度；额外收费需获得授权。正式发布、回滚及真实买家指标均按实际执行回填。
+
+[官方开发工具](https://shopify.dev/docs/api/ai-toolkit) · [SimGym](https://help.shopify.com/en/manual/online-store/simgym) · [Theme Check](https://shopify.dev/docs/storefronts/themes/tools/theme-check)
