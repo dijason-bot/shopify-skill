@@ -1,0 +1,33 @@
+# Shopify 商家后台功能地图
+
+按店铺实际套餐、地区与 rollout 查看后台。以下是官方入口与常用诊断顺序。主目录见 [Shopify Help Center](https://help.shopify.com/en)。
+
+| 功能域 | 能力与实施检查 | 官方入口 |
+| --- | --- | --- |
+| 建店、迁移与账户 | 套餐、店铺设置、用户角色、账单、导入、重定向、迁移后验收。盘点原站数据、支付和 SEO 后安排切流 | [建店](https://help.shopify.com/en/manual/intro-to-shopify) · [迁移](https://help.shopify.com/en/manual/migrating-to-shopify) · [账户](https://help.shopify.com/en/manual/your-account) |
+| 后台与应用 | 活动日志、staff 权限、第三方应用收费与权限。先核对角色、店铺和应用归属 | [后台](https://help.shopify.com/en/manual/shopify-admin) · [应用](https://help.shopify.com/en/manual/apps) |
+| 商品与集合 | 商品、SKU、选项与变体、组合、礼品卡、数字商品、商品集合和发布渠道。分别核对商品状态、市场及销售渠道资格 | [商品](https://help.shopify.com/en/manual/products) |
+| 自定义数据 | Metafields 给资源补充属性，metaobjects 管理结构化、可复用记录。先定义字段类型、校验、发布状态以及店面读取方式 | [自定义数据](https://help.shopify.com/en/manual/custom-data) |
+| 库存、地点与采购 | SKU、地点、可售库存、转移、订单分配、继续销售设置。门店或仓库库存用具体地点核对 | [库存](https://help.shopify.com/en/manual/inventory-and-locations) · [地点](https://help.shopify.com/en/manual/inventory-and-locations/locations) |
+| 店面、主题与域名 | 主题编辑器、模板、页面、博客、菜单、域名、重定向、搜索与筛选。先复制主题或建预览，测试移动端及主域名 | [在线商店](https://help.shopify.com/en/manual/online-store) · [域名](https://help.shopify.com/en/manual/domains) · [搜索与发现](https://help.shopify.com/en/manual/online-store/storefront-search/index) |
+| 结账与客户账户 | 结账设置、加速支付、结账和账户编辑器、结账区块、登录、账户体验和测试订单。逐个确认页面、扩展点、套餐和市场 | [结账](https://help.shopify.com/en/manual/checkout-settings) · [客户账户](https://help.shopify.com/en/manual/customers/customer-accounts) |
+| 支付与收款 | Shopify Payments、Shop Pay、第三方或手工支付、拒付、验证、结算和费用。将订单、交易、结算记录按币种与交易号对账 | [支付](https://help.shopify.com/en/manual/payments) · [Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments) |
+| 订单与售后 | 创建草稿订单、付款捕获、订单编辑、取消、履约、退货、退款和自助退货。分别检查付款、履约及退款状态 | [订单与履约](https://help.shopify.com/en/manual/fulfillment) |
+| 配送、物流和库存履约 | 发货地点、运输区域、运费、包装、订单路由、拆单、自提/本地配送。用实际地址和商品组合走一遍结账与退款 | [配送设置](https://help.shopify.com/en/manual/fulfillment/setup) |
+| Markets 与跨境 | 市场层级、域名和语言、市场定价、商品目录、主题调整、运费与关税。按目标买家所在市场、是否在目录内、结账币种验证 | [Markets](https://help.shopify.com/en/manual/markets/) · [跨境费用](https://help.shopify.com/en/manual/international/pricing/fees) |
+| 税费、隐私与合规 | 税务服务、税费启用、地区设置、政策、横幅、数据共享退出。查看 Shopify 配置的实际行为，法律适用另查主管机关 | [税务](https://help.shopify.com/en/manual/taxes) · [隐私设置](https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings) |
+| 客户、分群和复购 | 客户档案、标签、分群、营销许可、自动化和交易通知。区分样品买家、已买成品、退款和取消订单 | [客户](https://help.shopify.com/en/manual/customers) · [营销](https://help.shopify.com/en/manual/promoting-marketing) |
+| 营销、优惠和 SEO | 折扣码、自动折扣、组合优惠、Shopify Messaging、SEO。用测试结账确认门槛、组合、排除商品和最终价格 | [营销和推广](https://help.shopify.com/en/manual/promoting-marketing) · [折扣](https://help.shopify.com/en/manual/discounts) |
+| Flow 与自动化 | 以触发器、条件、动作为基本结构，查看运行历史、重试和重复触发。邮件流程还要核对发送产品与订阅许可 | [Shopify Flow](https://help.shopify.com/en/manual/shopify-flow) |
+| 销售渠道和商品 Feed | Shop、Google & YouTube、社交和市场平台。核对 Shopify 发布状态、下游审核状态、商品 ID、价格、库存以及落地页 | [销售渠道](https://help.shopify.com/en/manual/online-sales-channels) · [Google & YouTube](https://help.shopify.com/en/manual/online-sales-channels/marketplaces/google) |
+| Shopify Catalog 与 AI 渠道 | 从商品发现、目录资格、数据同步、买家落地及结账路径入手。查渠道开放范围、费用与订单归因 | [Shopify Catalog](https://help.shopify.com/en/manual/shopify-catalog) · [AI 渠道商品发现](https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts/products) |
+| 分析、客户事件和归因 | 订单、净销售、漏斗、营销归因、会话、报告口径和像素。区分点击时间、下单时间、账户时区、退款和税费 | [分析](https://help.shopify.com/en/manual/reports-and-analytics) · [像素](https://help.shopify.com/en/manual/promoting-marketing/pixels) |
+| Shopify B2B | 公司、公司地点、批发目录、价表和支付条款。当前商家文档列出 Basic、Grow、Advanced 和 Plus 可用，具体功能和目录限额取决于套餐 | [B2B](https://help.shopify.com/en/manual/b2b) · [B2B 与 Markets](https://help.shopify.com/en/manual/b2b/markets) |
+| POS 与全渠道 | POS 套餐、设备、地点、门店库存、线下收款、跨渠道退换。核查地区、设备和门店配置 | [Shopify POS](https://help.shopify.com/en/manual/sell-in-person) |
+| 财务与商家经营产品 | Balance、Capital、Credit、账单和结算。分别核对主体地区、资格和费率 | [财务](https://help.shopify.com/en/manual/finance) |
+
+## 常见问题的排查起点
+
+- 客户无法下单时，查商品状态、渠道和市场发布、库存地点、配送地址、支付方式及结账验证。保留错误界面、测试时间和测试商品。
+- 金额对不上时，按订单拆出商品、折扣、运费、税费、退款、处理费和汇兑，并注明每列币种与发生时间。
+- 新功能出现官方公告时，查后台可用性、套餐、地区、预览或正式状态和启用方式，再计划实施。

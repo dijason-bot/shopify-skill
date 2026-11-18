@@ -1,0 +1,28 @@
+# 官方更新与核查方法
+
+基线核查日期为 **2026-11-18（中国时间）**。公告日期以 Shopify 页面显示为准。
+
+| 来源 | 什么时候查 |
+| --- | --- |
+| [Shopify Help Center](https://help.shopify.com/en) | 商家操作、套餐、市场、渠道、费用及地区要求 |
+| [Shopify Editions Fall ’26](https://www.shopify.com/editions/fall2026) | 找新能力，沿单项帮助文档继续核实启用条件和 rollout |
+| [商家更新日志](https://changelog.shopify.com/) | 功能变更、上线日期、标签、正式发布与迁移 |
+| [开发更新日志](https://shopify.dev/changelog) | API、主题、应用扩展、弃用、breaking changes |
+| [API 版本策略](https://shopify.dev/docs/api/usage/versioning) | 稳定版、候选版、版本日期、兼容与迁移 |
+| [Shopify AI Toolkit](https://shopify.dev/docs/api/ai-toolkit) | 现行官方技能、插件、Dev MCP 和验证工作流 |
+| [Shopify Status](https://www.shopifystatus.com/) | 排查当下后台、支付、结账等服务异常 |
+
+## 基线与已核对的重点
+
+- **API**。开发更新日志显示稳定版 **2026-10**，候选版 **2027-01**。新开发先检查依赖的版本和功能面再选稳定版。已有集成核实实际请求、响应版本和调用源，计划测试后迁移。 [开发更新日志](https://shopify.dev/changelog) · [版本策略](https://shopify.dev/docs/api/usage/versioning)
+- **应用认证与迁移**。11 月 16 日公告涉及 Dev Dashboard 管理的 Admin API token 到期选项。11 月 17 日公告显示 Admin 创建的自定义应用现在可在 Dev Dashboard 看到。如迁移应用或调整凭证，先查具体公告及既有安装。 [开发更新日志](https://shopify.dev/changelog)
+- **AI Commerce**。Fall ’26 Editions 可作为商家产品发布入口，开发侧 UCP 文档覆盖商品发现、购物车、结账交接和订单追踪。11 月 11 日开发日志标记 Storefront MCP 的政策和常见问题工具将由 UCP MCP Ask 接替。 [Fall ’26 Editions](https://www.shopify.com/editions/fall2026) · [Commerce agents](https://shopify.dev/docs/agents) · [开发更新日志](https://shopify.dev/changelog)
+- **主题生态**。2026 年 10 月 28 日发布 Theme Store 的 theme app add-ons。需要捆绑定制配置器等应用时，先检查应用发布状态、合作伙伴资格和相关要求。 [官方公告](https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes)
+- **B2B 与 Markets**。当前 Help Center 按 Basic、Grow、Advanced、Plus 列出 B2B 能力，并对目录配额、直接分配和市场主题设置另列条件。实施前仍需检查目标店铺资格。 [Shopify B2B](https://help.shopify.com/en/manual/b2b) · [B2B 与 Markets](https://help.shopify.com/en/manual/b2b/markets)
+
+## 每次核查的顺序
+
+1. 从功能地图定位主文档。API 查具体版本下的字段、权限和资源生命周期，商家功能查页面的套餐、地区、rollout 及注意事项。
+2. 按功能名、API 面、发布日期过滤日志。公告与帮助页表述存在时间差时保留各自日期，并以后台实际状态或测试结果确认。
+3. 记录结果。采用“核查日期｜功能｜官方主文档与公告｜套餐/地区/版本｜测试对象与结果｜影响及待核实项”格式。状态可写“官方已确认”“店铺已验证”“待店铺验证”，明确适用范围。
+4. 调用 API、升级依赖或发布前再次确认。每季 API 版本变更时，复查已有集成依赖和弃用项。新一期 Editions 发布时，把与项目有关的变化归入对应功能地图和实操手册。
